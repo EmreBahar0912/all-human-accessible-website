@@ -159,6 +159,7 @@ main {
     display: grid;
     place-content: center;
     place-items: center;
+    justify-items: center;
     grid-auto-columns: 350px;
     grid-auto-rows: 350px;
     gap: 1em;
@@ -171,6 +172,20 @@ main {
       "box-6"
       "box-7"
       "box-8";
+
+    @media screen and (min-width: 768px) {
+      gap: 8em;
+      width: 700px;
+      place-items: center;
+      place-content: center;
+      align-items: center;
+      align-content: center;
+      grid-template-areas:
+        "box-1 box-2"
+        "box-3 box-4"
+        "box-5 box-6"
+        "box-7 box-8";
+    }
 }
 
 .card {
@@ -182,6 +197,10 @@ main {
     flex-direction: column;
     place-items: center;
     width: 400px;
+
+    @media screen and (min-width: 768px) {
+      width: 375px;
+    }
 }
 
 .card img {
