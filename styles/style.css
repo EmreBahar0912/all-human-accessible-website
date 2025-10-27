@@ -428,6 +428,11 @@ footer {
     font-weight: 200;
   }
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 865px) {
     display: flex;
     margin: 1em;
