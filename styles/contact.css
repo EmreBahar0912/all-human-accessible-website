@@ -158,9 +158,6 @@ main {
 .all-cards {
     display: grid;
     place-content: center;
-    place-items: center;
-    justify-items: center;
-    grid-auto-columns: 350px;
     grid-auto-rows: 350px;
     gap: 1em;
     grid-template-areas:
@@ -173,13 +170,8 @@ main {
       "box-7"
       "box-8";
 
-    @media screen and (min-width: 768px) {
-      gap: 8em;
-      width: 700px;
-      place-items: center;
-      place-content: center;
-      align-items: center;
-      align-content: center;
+    @media screen and (min-width: 820px) {
+      gap: 2em;
       grid-template-areas:
         "box-1 box-2"
         "box-3 box-4"
@@ -196,7 +188,6 @@ main {
     display: flex;
     flex-direction: column;
     place-items: center;
-    width: 400px;
 
     @media screen and (min-width: 768px) {
       width: 375px;
@@ -216,6 +207,7 @@ main {
 
 .member-rank {
     margin-top: -15px;
+    text-align: center;
     color: var(--green);
 
     @media (prefers-color-scheme: dark) {
@@ -230,7 +222,8 @@ main {
     font-weight: bolder;
     padding: 16px;
     gap: 10px;
-    width: 350px;
+    /* de a neemt nu 100% van de ruimte in de card zelf */
+    width: 100%;
     border-radius: 50px;
     background-color: var(--emailgroen);
 }
