@@ -178,16 +178,14 @@ main {
         "box-5 box-6"
         "box-7 box-8";
     }
-}
 
-@media screen and (min-width: 1200px) {
-  .all-cards {
+    @media screen and (min-width: 1300px) {
       gap: 3em;
-      grid-template-areas:
-      "box-1 box-2 box-3"
-      "box-4 box-5 box-6"
-      "box-7 box-8";
-  }
+      grid-template-areas: 
+        "box-1 box-2 box-3"
+        "box-4 box-5 box-6"
+        "box-7 box-8 .";
+    }
 }
 
 .card {
