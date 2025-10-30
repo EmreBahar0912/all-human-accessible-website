@@ -17,6 +17,10 @@ h1 {
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.4;
+
+  @media screen and (min-width: 866px) {
+    font-size: 55px;
+  }
 }
 
 h2,
@@ -26,6 +30,10 @@ h4 {
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.4;
+
+  @media screen and (min-width: 866px) {
+    font-size: 40px;
+  }
 }
 
 p {
@@ -34,6 +42,10 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 1.4;
+
+  @media screen and (min-width: 866px) {
+    font-size: 30px;
+  }
 }
 
 a {
@@ -44,10 +56,15 @@ a {
   line-height: 1.4;
   text-decoration: none;
   cursor: pointer;
+
+  @media screen and (min-width: 866px) {
+    font-size: 25px;
+  }
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -74,7 +91,12 @@ hr {
   transition: 0.3s ease;
 
   @media screen and (min-width: 866px) {
-    left: 0;
+    position: static;
+    background: none;
+    order: 1;
+    width: 100%;
+    height: unset;
+    max-width: unset;
   }
 }
 
@@ -86,6 +108,10 @@ hr {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 866px) {
+    display: none;
+  }
 }
 
 .hamburger-menu.is-open {
@@ -99,6 +125,10 @@ hr {
   display: flex;
   margin-top: 70%;
   cursor: pointer;
+
+  @media screen and (min-width: 866px) {
+    display: none;
+  }
 }
 
 .search-icon {
@@ -112,11 +142,25 @@ hr {
 
 .nav {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 866px) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* gap: 1.5em; */
+  }
 }
 
 .nav li {
   margin-bottom: 1.8em;
   translate: -10%;
+
+  @media screen and (min-width: 866px) {
+    margin: 0;
+    translate: unset;
+  }
 }
 
 .nav li:last-child {
@@ -149,6 +193,12 @@ h1 {
   width: 300px;
   height: 200px;
   border-radius: 6px;
+  object-fit: cover;
+
+  @media screen and (min-width: 866px) {
+    width: 825px;
+    height: 525px;
+  }
 }
 
 .container-1 {
@@ -157,6 +207,11 @@ h1 {
   align-items: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row;
+    margin: 1em;
+  }
+
+  @media screen and (min-width: 1530px) {
     flex-direction: row;
     margin: 1em;
   }
@@ -284,6 +339,11 @@ h1 {
   width: 300px;
   height: 200px;
   border-radius: 6px;
+
+  @media screen and (min-width: 866px) {
+    width: 825px;
+    height: 525px;
+  }
 }
 
 .container-2 {
@@ -292,6 +352,11 @@ h1 {
   align-items: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row-reverse;
+    margin: 1em;
+  }
+
+  @media screen and (min-width: 1530px) {
     flex-direction: row-reverse;
     margin: 1em;
   }
@@ -323,6 +388,11 @@ h1 {
   width: 300px;
   height: 200px;
   border-radius: 6px;
+
+  @media screen and (min-width: 866px) {
+    width: 825px;
+    height: 525px;
+  }
 }
 
 .container-3 {
@@ -332,6 +402,11 @@ h1 {
   align-items: center;
 
   @media screen and (min-width: 768px) and (max-width: 865px) {
+    flex-direction: row;
+    margin: 1em;
+  }
+
+  @media screen and (min-width: 1530px) {
     flex-direction: row;
     margin: 1em;
   }
@@ -438,7 +513,7 @@ footer {
     text-decoration: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 865px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin: 1em;
   }
