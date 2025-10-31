@@ -18,3 +18,16 @@ if (hamMenu.classList.contains("is-open")) {
 } else {
   document.body.style.opacity = "1";
 }
+
+const menu = document.getElementById('menu');
+const links = hamMenu.querySelectorAll('a');
+
+hamButton.addEventListener('click', () => {
+  const open = hamButton.getAttribute('aria-expanded') === 'true';
+  hamButton.setAttribute('aria-expanded', !open);
+  hamMenu.hidden = open;
+
+  links.forEach(link => {
+    link.tabIndex = open ? -1 : 0; // disable tab when closed
+  });
+});

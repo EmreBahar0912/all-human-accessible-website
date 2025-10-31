@@ -255,7 +255,7 @@ h1 {
 
 .carousel a {
   background-color: var(--lightgreen);
-  color: white;
+  color: black;
   border-radius: 25px;
   padding: 10px;
 }
@@ -511,6 +511,10 @@ footer {
   a {
     color: white;
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   @media screen and (min-width: 768px) {
