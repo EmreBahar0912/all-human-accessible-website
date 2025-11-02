@@ -77,8 +77,8 @@ hr {
   justify-items: center;
   transition: 0.3s ease;
 
-  @media screen and (min-width: 866px) {
-    left: 0;
+  @media screen and (min-width: 1300px) {
+    display: hidden;
   }
 }
 
@@ -103,6 +103,10 @@ hr {
   display: flex;
   margin-top: 70%;
   cursor: pointer;
+
+  @media screen and (min-width: 1300px) {
+    display: hidden;
+  }
 }
 
 .search-icon {
